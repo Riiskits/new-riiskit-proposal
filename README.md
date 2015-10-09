@@ -243,7 +243,7 @@ If this looks okay so far, there a few things unanswered.
 
 ### How should the directory structre of the plugin be?
 
-It is important to have good design, to make it easlily maintainable. This is a longterm prosject, small choices can have a huge impact.
+It is important to have good design, to make it easlily maintainable. This is a long term project, small choices can have a huge impact.
 
 ### Is there more functionality that should be provided in the plugin?
 ### Is there functionality that is unnecesary and should be removed?
