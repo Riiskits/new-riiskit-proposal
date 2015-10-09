@@ -4,7 +4,7 @@
 ---           | ---
 ------------- | -------------
 The plugin    | The new proposed plugin to replace the parent theme
-The theme     | The started theme to be used with the plugin
+The theme     | The skeleton theme to be used with the plugin
 The developer | The developer using the child theme to develop a theme
 should        | Required as a code standard, but not enforced
 may           | optional
