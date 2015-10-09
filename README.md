@@ -18,9 +18,9 @@ Where the plugin (now Riiskit Parrent) would provide functionality that the them
 
 ### Reasons for doing this
 
-	1. Parent themes should be used for providing templates that the child can extends, and seing as we do not do this, there is no real reason for the theme to be a plugin
-	2. With new proposed functionality, the now parent theme would have to have access to the child theme and its files. This is not recomended, and "deep links" the two. Plugins on the other hand are known to access files and such from themes. This makes unit testing a lot easier, as the plugin->theme method is well known.
-	3. Alot of the new proposed functionality is considered "plugin functionality", read; functionality that typically lives inside of plugins. This last point is basically "we should follow the masses, there is probably a reason for them doing it that way
+1. Parent themes should be used for providing templates that the child can extends, and seing as we do not do this, there is no real reason for the theme to be a plugin
+2. With new proposed functionality, the now parent theme would have to have access to the child theme and its files. This is not recomended, and "deep links" the two. Plugins on the other hand are known to access files and such from themes. This makes unit testing a lot easier, as the plugin->theme method is well known.
+3. Alot of the new proposed functionality is considered "plugin functionality", read; functionality that typically lives inside of plugins. This last point is basically "we should follow the masses, there is probably a reason for them doing it that way
 
 # The theme
 
@@ -202,6 +202,7 @@ Of the bat, includes "phpunit" and "codesniffer" as dev dependencies.
 
 The plugin is responsible for *all* functionality derectly related to Riiskit.
 this includes.
+
 1. Reading the config file
 2. Including the module loader or js framework if one is chosen
 3. Autoloading the core/ directory in the theme
