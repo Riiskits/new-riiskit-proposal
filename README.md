@@ -76,7 +76,7 @@ core/
         MyOtherClass.php //Contains a phpclass or interface with the name myTheme\someDir\MyOtherClass
 </pre>
 
-`myTheme` is used as the "root namespace" in this examplte. The "root namespace" is chosen in the [config.json file](#config.json)
+`myTheme` is used as the "root namespace" in this examplte. The "root namespace" is chosen in the [config.json file](#configjson)
 
 ### core/model/
 
@@ -91,7 +91,7 @@ Contains all PHP classes meant for getting data from the DB or from anywhere els
 
 A JSON file that defines custom post type. The structure in the JSON file matches the parameter list in the wordpress function insert_post_type exactly, EXCEPT: the post name(not lable) is used as the key in the json file
 
-The names are automatically prefixed with the prefix chosen in the [config.json file](#config.json)
+The names are automatically prefixed with the prefix chosen in the [config.json file](#configjson)
 
 ```js
 {
@@ -140,7 +140,7 @@ Contains compiled css. Nothing special about this directory, css is fetched via 
 
 ### res/requirejs-config.js
 
-Contains (optionally) a starting point for the require config. This file is required if the `modules` field is set to `requirejs` in the [config.json file](#config.json)
+Contains (optionally) a starting point for the require config. This file is required if the `modules` field is set to `requirejs` in the [config.json file](#configjson)
 
 ### src/
 
