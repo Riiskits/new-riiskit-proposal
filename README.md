@@ -200,7 +200,7 @@ Of the bat, includes "phpunit" and "codesniffer" as dev dependencies.
 
 # The plugin
 
-The plugin is responsible for *all* functionality derectly related to Riiskit.
+The plugin is responsible for *all* functionality directly related to Riiskit.
 this includes.
 
 1. Reading the config file
