@@ -208,6 +208,7 @@ this includes.
 4. Providing the PHP library (Which contains the PhpPostWrapper class for instance)
 5. Providing the Twig templateing engine
 6. Providing the Twig extension (That implements {{res}} and {{img}}
+7. SCSS Libraries
 
 
 ### PHP Library
