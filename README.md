@@ -34,6 +34,7 @@ template-controller/        # Contains TWIG tepmlate controllers
 core/                       # Conrtains autoloaded namespaced PHP
     model/                  # Contains PHP classes meant to access the DB
         postTypeWrappers/   # Contains classes extending the PostTypeWrapper class from *the plugin*
+post-types.json             # Contains a JSON file defining post types.
 res/                        # Contains resources that will be accessable from twig
     images/                 # Contains images
     image-res/              # Contains images in different resoulutions. These are auto-generated
@@ -85,6 +86,21 @@ Contains all PHP classes meant for getting data from the DB or from anywhere els
 ### core/model/postTypeWrappers/
 
 **must** only contain classes that extend the PostTypeWrapper class from *the plugin* These clases are used for fetching data from custom post types
+
+### post-types.json
+
+A JSON file that defines custom post type. The structure in the JSON file matches the parameter list in the wordpress function insert_post_type exactly, EXCEPT: the post name(not lable) is used as the key in the json file
+
+The names are automatically prefixed with the prefix chosen in the [config.json file](#config.json)
+
+```js
+{
+    "post-type-name" : {
+        "supports" : ["title", "content"],
+        ///etc.
+    }
+}
+```
 
 ### res/
 
@@ -161,6 +177,7 @@ These are
 
 ```js
 {
+    "prefix" : "prefix_", // The prefix used in this theme
     "php" : {
         "namespace" : "rootNameSpace", // The root namespace for the core/ directory
     },
