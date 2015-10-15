@@ -216,9 +216,77 @@ this includes.
 
 The classes and functions provided by the build in PHP librARY
 
-<pre>
-riiskit\\model\PostTypeWrapper #The PostTypeWrapper super class
-</pre>
+<pre> final riiskit\model\PostType # Class to hold post types </pre>
+```php
+    /* # Static interface # */
+
+    /**
+     * Get a PostType object representing the post type with the name
+     * passed in
+     */
+    public static function fromPostTypeName($postTypeName) {...};
+
+    /**
+     * Register a new post type
+     */
+    public static function register(array $args) {};
+    
+    
+    /* # Instance Interface # */
+    
+    /**
+     * Get the name of this post type
+     *
+     * @return string The name of this post type
+     */
+    public function getName() {...};
+    
+    /**
+     * Get the lable for this post type
+     *
+     * @return string The lable for this post type
+     */
+    public function getLabel() {...};
+    
+    /**
+     * Get the singular lable for this post type
+     *
+     * @return string The singular lable for this post type
+     */
+    public function getSingularLabel() {...};
+    
+    /**
+     * Is this post type public?
+     *
+     * @return bool true if yes, false if no
+     */
+    public function isPublic() {...};
+```
+
+
+<pre> abstract riiskit\model\PostWrapper #The PostWrapper super class </pre>
+```php
+    /**
+     * Get the post type name for this post
+     *
+     * @return string The name of the post type
+     */
+    public static function getPostType();
+
+    /**
+     * Returns the ID of the undelying WordPress post
+     *
+     * @return int The WordPress post ID
+     */
+    public abstract function getPostID();
+    
+    /**
+     * Returns this post as an array
+     *
+     * @return Array
+     */
+    public abstract function toArray();
+```
 
 ### JS Library
 
